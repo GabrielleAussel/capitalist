@@ -1,0 +1,51 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class='container-fluid'>
+<div style="text-align:center">
+    <h1> <span id="worldname">Welcome to {{world.name}} !</span></h1>
+    <h2><img [attr.src]=server+world.logo width="8%" /> </h2>
+    <h3><span [innerHTML]="world.money | bigvalue" class="badge badge-pill badge-info "></span></h3>
+</div>
+
+
+<div style="text-align: center">
+    <button type="button" class="btn btn-info">Unlocks</button>
+    <button type="button" class="btn btn-info">Cash Upgrade</button>
+    <button type="button" class="btn btn-info">Angel Upgrades</button>
+    <button type="button" class="btn btn-info" data-toggle="modal" (click)="managersModal.show()"><span class="badge">New</span>Managers</button>
+    <button type="button" class="btn btn-info">Investors</button>
+    <button type="button" class="btn btn-info" (click)="valeurAchat()">x{{qtmulti}}</button>
+</div>
+
+<div class="row">
+    <div class="col-4" *ngFor="let product of world.products.product">
+        <app-product [monde]="world" [prod]="product" class="producat col-md-6"
+            (notifyProduction)="onProductionDone($event)" [qtmulti]="qtmulti"></app-product>
+    </div>
+</div>
+<toaster-container></toaster-container>
+
+
+<app-modal #managersModal>
+    <div class="app-modal-header">
+        <h4 class="modal-title">Managers make you feel better !</h4>
+    </div>
+    <div class="app-modal-body">
+            <div *ngFor="let manager of world.managers.pallier">
+                <div 
+                class="card">
+                    <img [attr.src]=server+manager.logo width="15%" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" class="center-text">{{manager.name}}</h5>
+                        <p class="card-text">{{world.products.product[manager.idcible].name}}</p>
+                        <p class="card-text">cout : {{manager.seuil}}</p>
+                        <button type="button" class="btn btn-info" (click)="engagerManager(manager)">Hire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="app-modal-footer">
+        <button type="button" class="btn btn-default" (click)="managersModal.hide()">Close</button>
+    </div>
+</app-modal>
+</div>

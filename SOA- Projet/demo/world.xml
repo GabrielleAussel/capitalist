@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<world
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='src/main/resources/worldSchema.xsd'>
+    <name>FarmerAdventure</name>
+    <logo>Logo.png</logo>
+    <money>0</money>
+    <score></score>
+    <totalangels>0</totalangels>
+    <activeangels>0</activeangels>
+    <angelbonus>0</angelbonus>
+    <lastupdate>0</lastupdate>
+    <products>
+        <product>
+            <id>0</id>
+            <name>Champs</name>
+            <logo>plantation.png</logo>
+            <cout>4</cout>
+            <croissance>1.3</croissance>
+            <revenu>2</revenu>
+            <vitesse>50</vitesse>
+            <quantite>1</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>Gaïa</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>1 hectare</name>
+                    <logo>one.png</logo>
+                    <seuil>20</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>faux</unlocked>
+                </pallier>
+                <pallier>
+                    <name>10 hectares</name>
+                    <logo>ten.png</logo>
+                    <seuil>100</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>faux</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>1</id>
+            <name>Tracteur</name>
+            <logo>tractor.png</logo>
+            <cout>10</cout>
+            <croissance>1.5</croissance>
+            <revenu>5</revenu>
+            <vitesse>100</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>Gérard</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>1 tracteur</name>
+                    <logo>one.png</logo>
+                    <seuil>20</seuil>
+                    <idcible>2</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>faux</unlocked>
+                </pallier>
+                <pallier>
+                    <name>10 tracteurs</name>
+                    <logo>ten.png</logo>
+                    <seuil>100</seuil>
+                    <idcible>2</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>faux</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>2</id>
+            <name>Poussin</name>
+            <logo>bird.png</logo>
+            <cout>15</cout>
+            <croissance>1.5</croissance>
+            <revenu>6</revenu>
+            <vitesse>500</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>Diane</managerUnlocked>
+            <palliers>
+                <pallier>
+                </pallier>
+            </palliers>
+        </product>
+         <product>
+            <id>3</id>
+            <name>Carotte</name>
+            <logo>carotte.png</logo>
+            <cout>16</cout>
+            <croissance>1.6</croissance>
+            <revenu>6</revenu>
+            <vitesse>800</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>Bugs bunny</managerUnlocked>
+            <palliers>
+                <pallier>
+                </pallier>
+            </palliers>
+        </product> 
+        <product>
+            <id>4</id>
+            <name>Foin</name>
+            <logo>straw-bale.png</logo>
+            <cout>20</cout>
+            <croissance>1.7</croissance>
+            <revenu>9</revenu>
+            <vitesse>900</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>La papaille</managerUnlocked>
+            <palliers>
+                <pallier>
+                </pallier>
+            </palliers>
+        </product> 
+         <product>
+            <id>5</id>
+            <name>Vache</name>
+            <logo>cow.png</logo>
+            <cout>25</cout>
+            <croissance>1.8</croissance>
+            <revenu>15</revenu>
+            <vitesse>1200</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>Cow girl</managerUnlocked>
+            <palliers>
+                <pallier>
+                </pallier>
+            </palliers>
+        </product> 
+    </products>
+    <allunlocks>
+    </allunlocks>
+    <upgrades>
+    </upgrades>
+    <angelupgrades>
+    </angelupgrades>
+    <managers>
+	
+		<pallier>
+			<name>Gaïa</name>
+			<logo>gaia.png</logo>
+            <seuil>10</seuil>
+            <idcible>0</idcible>
+            <ratio></ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>faux</unlocked>
+		</pallier>
+		<pallier>
+			<name>Gérard</name>
+			<logo>farmer.png</logo>
+            <seuil>2000</seuil>
+            <idcible>1</idcible>
+            <ratio></ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>faux</unlocked>
+		</pallier>
+		<pallier>
+			<name>Horus</name>
+			<logo>horus.png</logo>
+            <seuil>3000</seuil>
+            <idcible>2</idcible>
+            <ratio></ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>faux</unlocked>
+		</pallier>
+		<pallier>
+			<name>Bugs Bunny</name>
+			<logo>bunny.png</logo>
+            <seuil>4000</seuil>
+            <idcible>3</idcible>
+            <ratio></ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>faux</unlocked>
+		</pallier>
+		<pallier>
+			<name>La papaille</name>
+			<logo>demeter.png</logo>
+            <seuil>5000</seuil>
+            <idcible>4</idcible>
+            <ratio></ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>faux</unlocked>
+		</pallier>
+		<pallier>
+			<name>CowBoy</name>
+			<logo>sheriff.png</logo>
+            <seuil>6000</seuil>
+            <idcible>5</idcible>
+            <ratio></ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>faux</unlocked>
+		</pallier>
+	
+    </managers>
+
+</world>

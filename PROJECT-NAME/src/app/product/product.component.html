@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <img [attr.src]="server+product.logo" class="card-img-top center-image" alt="..." (click)="startFabrication()">
+        <div class="card-body">
+          <h5 class="card-title" class="center-text">{{product.name}}</h5>
+          <p class="card-text">vitesse : {{product.vitesse}} ms</p>
+          <div class="progress" #bar></div>
+          <p class="card-text">cout : {{product.cout}}$</p>
+          <p class="card-text">revenu :{{product.revenu}}$</p>
+          <p class="card-text">quantité : {{product.quantite}}</p>
+          <button type="button" class="btn btn-info" (click)=acheterProduit(product) [disabled]=!checkEnoughMoney(product)>Buy x{{ quantiteAchat}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
